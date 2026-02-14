@@ -32,7 +32,7 @@ iframe {
     padding-bottom: 10px;
     padding-top: 10px;
     right: 225px;
-    margin-left: 343px;
+    margin-left: 395px;
     margin-top: 50px;
     margin-right: 330px;
     margin-bottom: 50px;
@@ -98,7 +98,7 @@ footer   {
     background-image: repeating-linear-gradient(180deg,rgba(0,0,0,0.51) 0%,rgba(0,0,0,0.0) 100%);
     margin-bottom: 5px;
 }
-ul  {
+.cast-info ul  {
     color: #FFFFFF;
     font-family: "Anton SC", sans-serif;
     font-style: normal;
@@ -152,6 +152,35 @@ footer  {
     font-size: x-large;
     font-weight: 400;
 }
+nav ul li {
+    text-align: center;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    display: inline-block;
+    margin-left: 95px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    color: #F90004;
+    font-size: xx-large;
+    padding-top: 20px;
+    font-family: "Anton SC", sans-serif;
+    font-style: normal;
+    font-size: xx-large;
+    font-weight: 400;
+}
+nav ul li a:link {
+    color: #FF0000;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    font-weight: bolder;
+    text-shadow: 10px 10px 50px #0A00FF;
+}
+nav ul li a:visited {
+    color: #FF0004;
+}
 </style>	
 </head>
 <body>
@@ -159,20 +188,38 @@ footer  {
 		<header>
 				<img src="Images/logo.png"/>
 		</header>
+	  <nav class= "naviagtion">
+			
+		
+		<ul class="navigationitems">
+			
+		<li><a href="index.html">Home</a></li>
+		<li><a href="#synopsistext">Synopsis</a></li>
+		<li><a href="#castinformation">Cast</a></li>
+		<li><a href="https://www.imdb.com/es/title/tt15090124/fullcredits/?ref_=tt_ov_sm_3#amzn1.imdb.concept.name_credit_group.7caf7d16-5db9-4f4f-8864-d4c6e711c686" target="_blank">Production Team</a></li>
+		<li><a href="#">Tickets</a></li>	
+		</ul>
+	</nav>
+			
+			
+			
+	 
 	  <main>	
 		 <section  class="video-trailer"> 
 	    <iframe width="560" height="315" src="https://www.youtube.com/embed/jas8OABbn0Y?si=V98wVjVmF-F1bGvd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 	    </section>
-		   
+		 <div id="synopsistext">  
 		  <section class="main-text-image">
-			  <img src="Images/poster.jpg" class="img_synopsis" />
+			  <img src="Images/poster.jpg" class="img_synopsis" />  
 		  <h2 class="synopis">
 				Mad God (2021) is a nightmarish, dialogue-free stop-motion animated masterpiece directed by visual effects legend Phil Tippett over a 30-year production period. It is an experimental horror film that follows an assassin's journey through a grotesque, chaotic underworld filled with, ruined cities, and monstrous, mutated creatures.
 			</h2>
 			</section>
+		</div>
+	<div id="castinformation">	  
 <section class="cast-info">
 			  <img src="Images/director.jpg" class="director"/>
-		<ul>	  
+		<ul class="cast-member">	  
 		<li><h2>Director</h2>
 		<h3>Phil Tippett</h3>
 		</li>
@@ -190,12 +237,12 @@ footer  {
 		</h3>	
 		</li>
 		</ul>
-</section>		 
+</section>	
+	</div>	
 		</main>
-	 	  
-		<footer>
+<footer>
 			
-	 	  <p> &copy 2026, Nycolas Moreno.</p>
+    <p> &copy 2026, Nycolas Moreno.</p>
 			<p> This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
 		
 		</footer>
