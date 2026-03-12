@@ -3,16 +3,18 @@
 <head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <meta charset="utf-8">
 
 <title>Coral Springs Center for the Arts|Nycolas Moreno 2026</title>
 	<style type="text/css">
 		body{
     margin: 0;
-    background-size: contain;
-    background-image: url(images/texture.jpeg);
     width: auto;
+    background-image: -webkit-linear-gradient(270deg,rgba(27,19,37,1.00) 0%,rgba(58,18,31,1.00) 52.33%,rgba(73,30,31,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(27,19,37,1.00) 0%,rgba(58,18,31,1.00) 52.33%,rgba(73,30,31,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(27,19,37,1.00) 0%,rgba(58,18,31,1.00) 52.33%,rgba(73,30,31,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(27,19,37,1.00) 0%,rgba(58,18,31,1.00) 52.33%,rgba(73,30,31,1.00) 100%);
 		}
 	wrapper {
     margin: auto;
@@ -20,7 +22,7 @@
     display: block;
 }
 nav  {
-    background-color: #000000;
+    background-color: rgba(13,12,12,0.70);
     padding-top: 0px;
     padding-bottom: 0px;
     height: 104px;
@@ -40,32 +42,36 @@ nav ul   {
     text-align: justify;
     text-decoration: none;
     display: inline-block;
-    margin-left: 259px;
-    margin-top: 44px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    position: relative;
+    left: 402px;
+    top: -12px;
 }
 a {
     text-decoration: none;
-    margin-right: -9px;
-    margin-left: 8px;
+    padding: 5px;
 }
 .navigation ul a li  {
     display: inline-block;
     color: #FFFFFF;
     position: relative;
-    margin-left: 90px;
-    margin-top: -26px;
+    margin-left: 37px;
+    padding-bottom: 0px;
 }
 .navigation ul a li:hover {
-    color: #FF0004;
+    color: #F1F1F1;
     position: relative;
+    background-color: rgba(139,139,139,0.66);
+    border-bottom: medium solid rgba(255,255,255,1.00);
 }
 .carousel{
     width: 100%;
     overflow-x: auto;
-    margin-top: -1em;
+    margin-top: -6em;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: .1em;
+    margin-bottom: -3.9em;
     display: flex;
     gap: 1em;
     scroll-behavior: smooth;
@@ -91,7 +97,7 @@ a {
 			
 		}	
 		.card::scroll-marker:target-current{
-			background-color: black;
+			background-color: whitesmoke;
 			
 		}
 	.carousel::-webkit-scrollbar{
@@ -137,7 +143,6 @@ a {
     text-align: center;
     align-content: center;
     margin-bottom: 0px;
-    margin-left: 149px;
 		}
 .card img {
     opacity: 1;
@@ -147,17 +152,37 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     align-content: center;
-    max-width: 1100px;
-    max-height: 500px;
+    max-width: 1350px;
+    max-height: 600px;
     margin-bottom: 50px;
 }
-    #upcomingevents   {
-    margin-left: 46px;
-    display: inline;
-    background-size: cover;
+#eventscalendar   {
+   font-size: 30px;
+    text-align: left;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgba(13,12,12,0.70);
+    margin-left: -15px;
+    margin-right: -216px;
+    padding-left: 60px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
-.eventsinfo   {
-    flex: 1;
+#locationmap   {
+  font-size: 30px;
+    text-align: left;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgba(13,12,12,0.70);
+    margin-left: -15px;
+    margin-right: -216px;
+    padding-left: 60px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 .eventswrapper {
     padding-top: 0;
@@ -169,22 +194,23 @@ a {
     aling-items: center;
     justify-content: space-around;
     gap: 5rem;
+    margin-bottom: -165px;
+    margin-top: 60px;
 }
 .eventsinfo  {
     list-style-type: none;
-    margin-right: -163px;
+    margin-right: -185px;
     position: relative;
     top: -310px;
-    margin-top: 35px;
+    margin-top: 45px;
     padding-left: 29px;
     padding-right: 0px;
 }
 .infotext   {
     list-style-type: none;
-    padding-bottom: 31px;
     margin-left: 247px;
-    margin-right: -36px;
-    background-color: rgba(0,0,0,0.100);
+    margin-right: -24px;
+    background-color: rgba(122,122,122,0.16);
     border-radius: 24px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -193,22 +219,28 @@ a {
     bottom: -52px;
     position: relative;
     max-height: 250px;
+    padding-bottom: 5px;
+    margin-bottom: 28px;
+    margin-top: -4px;
+    -webkit-box-shadow: 0px 4px 9px;
+    box-shadow: 0px 4px 9px;
 }
 .eventsimg {
     list-style-type: none;
-    margin-left: 2px;
+    margin-left: 13px;
     margin-top: 18px;
-    max-width: 240px;
-    max-height: 240px;
+    max-width: 210px;
+    max-height: 236px;
     padding-top: 0px;
     padding-right: 0px;
     padding-left: 0px;
     padding-bottom: 0px;
-    min-height: 240px;
-    min-width: 240px;
+    min-height: 182px;
+    min-width: 212px;
+	
 }
 h2 {
-    color: #FF0004;
+    color: #FFFFFF;
     font-family: "DM Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -233,6 +265,7 @@ h4 {
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 25px;
+    color: rgba(255,255,255,1.00);
 }
 h3 {
     font-family: "DM Sans", sans-serif;
@@ -241,6 +274,7 @@ h3 {
     font-size: 25px;
     padding-bottom: 0px;
     padding-top: 28px;
+    color: rgba(255,0,4,1.00);
 }
 .infoname {
     font-size: 32px;
@@ -256,6 +290,101 @@ h3 {
     background-color: rgba(13,12,12,0.70);
     margin-left: 21px;
     padding-left: 32px;
+    margin-top: 53px;
+}
+		.medianwrapper {
+    padding-top: 0;
+    padding-right: 216px;
+    padding-left: 15px;
+    padding-bottom: 0;
+    display: block;
+    flex-wrap: wrap;
+    aling-items: center;
+    justify-content: space-around;
+    background-image: -webkit-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
+    background-image: linear-gradient(180deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
+    gap: 5rem;
+    position: relative;
+}
+#media   {
+   font-size: 30px;
+    text-align: left;
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: rgba(13,12,12,0.70);
+    margin-left: -15px;
+    margin-right: -216px;
+    padding-left: 60px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+
+.video  {
+    align-content: center;
+    margin-left: 178px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    width: 1020px;
+    height: 720px;
+}
+   
+.calendarwrapper {
+    padding-top: 0;
+    padding-right: 216px;
+    padding-left: 15px;
+    padding-bottom: 0;
+    display: block;
+    flex-wrap: wrap;
+    aling-items: center;
+    justify-content: space-around;
+    background-image: -webkit-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.33) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.33) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.33) 100%);
+    background-image: linear-gradient(180deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.33) 100%);
+    gap: 5rem;
+}
+.locationwrapper {
+     padding-top: 0;
+    padding-right: 216px;
+    padding-left: 15px;
+    padding-bottom: 0;
+    display: block;
+    flex-wrap: wrap;
+    aling-items: center;
+    justify-content: space-around;
+    gap: 5rem;
+    background-image: -webkit-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
+    background-image: linear-gradient(180deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
+    border-bottom-right-radius: 246px;
+}
+
+    footer {
+    color: rgba(255,255,255,1.00);
+    margin: 30px;
+    padding: 15px;
+}
+.calendargoogle  {
+    align-content: center;
+    margin-left: 246px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+.map  {
+    align-content: center;
+    margin-left: 246px;
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
+    .eventswrapper img {
+    -webkit-box-shadow: 0px 8px 18px 2px;
+    box-shadow: 0px 8px 18px 2px;
 }
     </style>
 </head>
@@ -366,10 +495,18 @@ h3 {
 		 </section>	  
 		</div> 
      </div>   
-        
-		
-	  
-	  
+	      <section class="medianwrapper">
+	  <h2 id="media">Media</h2>
+	 <iframe  src="https://www.youtube.com/embed/WKNNFPo7A7w?si=aBPZWRaqS-5K1-iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe>
+	  </section>
+	<section class="calendarwrapper">
+		<h2 id="eventscalendar">Events Calendar</h2>
+		<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showTitle=0&showTz=0&showCalendars=0&showTabs=0&hl=en&title=Upcoming%20Evnets&src=MzQ5N2NjYTQwYmM3M2ZmOThmOGJkYjJkNDIyYjYwZjU3MzljMzAzODEzOTk0MDc0M2Y0Y2E0YTA5OTE4ZmUxNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23a79b8e" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" class="calendargoogle"></iframe>
+	</section>
+	  <section class="locationwrapper">
+	  <h2 id="locationmap">Location</h2>
+	  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.0568293869906!2d-80.26711163714958!3d26.266239821933276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d905457c018c5d%3A0xcc7923bb5bf1fad1!2sThe%20Center%20-%20Coral%20Springs%20Center%20for%20the%20Arts!5e0!3m2!1ses!2sus!4v1773338230363!5m2!1ses!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+	  </section>
 	  
   </main>
 <footer> 
