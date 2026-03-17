@@ -58,6 +58,7 @@ a {
     position: relative;
     margin-left: 37px;
     padding-bottom: 0px;
+    margin-top: -9px;
 }
 .navigation ul a li:hover {
     color: #F1F1F1;
@@ -155,6 +156,8 @@ a {
     max-width: 1350px;
     max-height: 600px;
     margin-bottom: 50px;
+	-webkit-box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
+    box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
 }
 #eventscalendar   {
    font-size: 30px;
@@ -292,6 +295,7 @@ h3 {
     padding-left: 32px;
     margin-top: 53px;
     border-radius: 20px;
+	
 }
 		.medianwrapper {
     padding-top: 0;
@@ -308,6 +312,9 @@ h3 {
     gap: 5rem;
     position: relative;
     margin-bottom: 48px;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
+    box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
+    padding-bottom: 20px;
 }
 #media   {
     font-size: 30px;
@@ -327,18 +334,19 @@ h3 {
 
 .video  {
     align-content: center;
-    margin-left: 178px;
+    margin-left: 99px;
     padding-top: 5px;
-    padding-bottom: 22px;
-    width: 1020px;
+    width: 1131px;
     height: 720px;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
+    box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);	
 }
    
 .calendarwrapper {
     padding-top: 0;
     padding-right: 216px;
     padding-left: 15px;
-    padding-bottom: 22px;
+    padding-bottom: 30px;
     display: block;
     flex-wrap: wrap;
     aling-items: center;
@@ -349,12 +357,13 @@ h3 {
     background-image: linear-gradient(180deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.33) 100%);
     gap: 5rem;
     margin-bottom: 48px;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
+    box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
 }
 .locationwrapper {
     padding-top: 0;
     padding-right: 216px;
     padding-left: 15px;
-    padding-bottom: 0;
     display: block;
     flex-wrap: wrap;
     aling-items: center;
@@ -364,8 +373,11 @@ h3 {
     background-image: -moz-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
     background-image: -o-linear-gradient(270deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
     background-image: linear-gradient(180deg,rgba(23,20,41,1.00) 0%,rgba(132,50,68,0.72) 100%);
-    border-bottom-right-radius: 185px;
-    margin-bottom: 0px;
+    border-bottom-right-radius: 137px;
+    -webkit-box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
+    box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
+    padding-bottom: 0px;
+    margin-bottom: -202px;
 }
 
     footer {
@@ -375,10 +387,11 @@ h3 {
 }
 .calendargoogle  {
     align-content: center;
-    margin-left: 246px;
+    margin-left: 315px;
     padding-top: 5px;
     border-radius: 20px;
-    padding-bottom: 12px;
+       -webkit-box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
+    box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
 }
 .map  {
     align-content: center;
@@ -386,9 +399,11 @@ h3 {
     display: inline-block;
     margin-left: 242px;
     position: relative;
-    top: -196px;
+    top: -225px;
     left: 239px;
     border-bottom-right-radius: 75px;
+	   -webkit-box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
+    box-shadow: 0px 0px 12px 1px rgba(24,23,23,0.46);
 }
     .eventswrapper img {
     -webkit-box-shadow: 0px 8px 18px 2px;
@@ -409,7 +424,7 @@ h3 {
     width: 299px;
     border-style: none;
     position: relative;
-    top: 75px;
+    top: 20px;
     text-align: left;
     background-color: rgba(13,12,12,0.70);
     margin-left: 33px;
@@ -429,13 +444,13 @@ h3 {
     <img class="banner" src="images/the-center-white.png" alt="" width="200" height="75" >
 	</a>
 	<ul>
-	<a href="index.html">
+	<a href="#upcomingevents">
     <li><h2 class="navname">Events</h2></li>
     </a>
-    <a href="media.html">
+    <a href="#media">
     <li><h2 class="navname">Media</h2></li>
     </a>
-	<a href="location.html">
+	<a href="#locationmap">
     <li><h2 class="navname">Location</h2></li>
     </a>
 	</ul>
@@ -531,13 +546,13 @@ h3 {
     <img class="banner" src="images/the-center-white.png" alt="" width="200" height="75" >
 	</a>
 	<ul>
-	<a href="index.html">
-    <li><h2 class="navname">Home</h2></li>
+	<a href="#upcomingevents">
+    <li><h2 class="navname">Events</h2></li>
     </a>
-    <a href="media.html">
+    <a href="#media">
     <li><h2 class="navname">Media</h2></li>
     </a>
-	<a href="location.html">
+	<a href="#locationmap">
     <li><h2 class="navname">Location</h2></li>
     </a>
 	</ul>
@@ -553,13 +568,13 @@ h3 {
     <img class="banner" src="images/the-center-white.png" alt="" width="200" height="75" >
 	</a>
 	<ul>
-	<a href="index.html">
-    <li><h2 class="navname">Home</h2></li>
+	<a href="#upcomingevents">
+    <li><h2 class="navname">Events</h2></li>
     </a>
-    <a href="media.html">
+    <a href="#media">
     <li><h2 class="navname">Media</h2></li>
     </a>
-	<a href="location.html">
+	<a href="#locationmap">
     <li><h2 class="navname">Location</h2></li>
     </a>
 	</ul>
@@ -567,7 +582,7 @@ h3 {
 	</section>
 	<section class="calendarwrapper">
 		<h2 id="eventscalendar">Events Calendar</h2>
-		<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showTitle=0&showTz=0&showCalendars=0&showTabs=0&hl=en&title=Upcoming%20Evnets&src=MzQ5N2NjYTQwYmM3M2ZmOThmOGJkYjJkNDIyYjYwZjU3MzljMzAzODEzOTk0MDc0M2Y0Y2E0YTA5OTE4ZmUxNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23a79b8e" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no" class="calendargoogle"></iframe>
+		<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showTitle=0&showTz=0&showCalendars=0&showTabs=0&hl=en&title=Upcoming%20Evnets&src=MzQ5N2NjYTQwYmM3M2ZmOThmOGJkYjJkNDIyYjYwZjU3MzljMzAzODEzOTk0MDc0M2Y0Y2E0YTA5OTE4ZmUxNkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23a79b8e" style="border-width:0" width="700" height="600" frameborder="0" scrolling="no" class="calendargoogle"></iframe>
 	</section>
 	  <section id="#home4"> 
     <nav class="navigation">
@@ -575,13 +590,13 @@ h3 {
     <img class="banner" src="images/the-center-white.png" alt="" width="200" height="75" >
 	</a>
 	<ul>
-	<a href="index.html">
-    <li><h2 class="navname">Home</h2></li>
+	<a href="#upcomingevents">
+    <li><h2 class="navname">Events</h2></li>
     </a>
-    <a href="media.html">
+    <a href="#media">
     <li><h2 class="navname">Media</h2></li>
     </a>
-	<a href="location.html">
+	<a href="#locationmap">
     <li><h2 class="navname">Location</h2></li>
     </a>
 	</ul>
