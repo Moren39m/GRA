@@ -823,7 +823,7 @@ display: flex;
 display: flex;
     flex-direction: row; 
     align-items: flex-start; /* Keeps text and image aligned at the top */
-    gap: 30px;               /* Space between image and text */
+    gap: 30px;               
     padding: 20px;
     list-style: none;
     width: 100%;
