@@ -1,54 +1,385 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Michael Kors | Shirt | Nycolas Moreno, 2026</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<title>American Eagle | Nycolas Moreno, 2026</title>
 <style type="text/css">
 body {
     margin: 0;
 }
-wrapper {
+	wrapper {
     margin: auto;
     width: 1366px;
     display: block;
 }
+#menu li {
+	font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+#colorswatches {
+    padding-left: 10px;
+}
+#sizebuttonsinfo {
+    padding-left: 10px;
+}
+#info p {
+	 font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+	
+}
+#info h2  {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: <weight>;
+    font-style: normal;
+    color: #0E0E0E;
+    font-size: 40px;
+}
+	#info h3  {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: <weight>;
+    font-style: normal;
+    color: #151515;
+    font-size: 15px;
+}
+#objectnameinfo #toptitlename {
+    color: #2F609D;
+    margin-top: 13px;
+    margin-right: 5px;
+    font-size: 13px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    margin-bottom: -28px;
+}
+#objectnameinfo #bottomtitlename {
+    color: #2F609D;
+    font-size: 13px;
+    padding-bottom: 10px;
+    margin-top: -30px;
+    margin-bottom: 5px;
+}
+
+
 section {
+    width: 600px;
     display: inline-block;
     margin: 20px;
-    width: 600px;
     vertical-align: top;
-    height: 800px;
+    height: 1000px;
 }
-button {
-    width: 50px;
+#colorbuttons button  {
+    width: 40px;
+    margin-top: 2px;
+    margin-right: -5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    border-radius: 25px;
+    border: thin solid #898989;
+}
+#colorbuttons button:hover {
+    border: thin solid #000000;
+}
+#allsizebuttons button {
+    width: 40px;
+    border-radius: 10px;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: thin solid #7D7D7D;
+    margin-right: -5px;
+}
+#allsizebuttons button:hover {
+    border: thin solid #000000;
+}
+#menu ul li {
     margin: 10px;
-    border-radius: 25px;
-    border: medium solid rgba(255,255,255,1.00);
-    height: 50px;
+    display: inline-block;
+    position: relative;
 }
-button:hover {
-    border-radius: 25px;
-    border: medium solid rgba(0,0,0,1.00);
-}
-#product img  {
-    height: auto;
-    width: 100%;
-    position: absolute;
-}
-#blueswatch {
-    background-color: rgba(66,67,133,1.00);
-}
-#greenswatch {
-    background-color: rgba(108,132,66,1.00);
-}
-#purpleswatch {
-    background-color: rgba(134,68,134,1.00);
+#info {
+    margin: 10px;
 }
 #product {
     position: relative;
 }
+#product img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+#objectnameinfo {
+    padding-left: 10px;
+}
+#beigeswatch {
+    background-color: #E5D3C3;
+}
+#purpleswatch {
+    background-color: #AF819A;
+}
+#whiteswatch {
+    background-color: #D2D2D2;
+}
+#reviewsinfo {
+    padding-left: 10px;
+}
+	.star-rating {
+    display: flex;
+    flex-direction: row-reverse; /* Flips the order visually */
+    justify-content: flex-end;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.star-rating input {
+  display: none; /* Hide the actual radio circles */
+}
+
+.star-rating label {
+  font-size: 2rem;
+  color: #ccc; /* Default grey star */
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+/* Highlight stars on hover and when checked */
+.star-rating input:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #0166A4; /* selected color */
+}
+	/* Remove the default browser arrow */
+details summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #90C1FF;
+}
+
+details summary::-webkit-details-marker {
+  display: none; 
+}
+
+
+summary h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+
+details ul {
+  padding: 15px 40px;
+  margin: 0;
+  background-color: #fff;
+}
+
+/* The "+" to "-" logic */
+details[open] .icon {
+  transform: rotate(45px); 
+}
+
+details[open] .icon::before {
+  content: "−"; /* Changes + to - when open */
+}
+
+.icon::before {
+  content: "+";
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#originalprice {
+    display: flex;
+    text-decoration: line-through;
+    color: #818181;
+    margin-top: -2px;
+    margin-bottom: 30px;
+}
+#promotionprice {
+    color: #101010;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+	/* Container counter styling */
+  .quantity-toggle {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: fit-content;
+    overflow: hidden;
+    font-family: sans-serif;
+  }
+
+  /* Style for the Plus/Minus buttons */
+  .quantity-toggle button {
+    background-color: #f8f8f8;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.2s;
+  }
+
+  .quantity-toggle button:hover {
+    background-color: #eee;
+  }
+
+  /* Style for the number display */
+  .quantity-toggle input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+	  
+    /* Removes arrows from number input */
+    -moz-appearance: textfield;
+  }
+
+  .quantity-toggle input::-webkit-outer-spin-button,
+  .quantity-toggle input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+	/* Container for the search bar */
+#search-container {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: 1px solid transparent;
+    top: -1px;
+}
+
+/* The actual input field */
+#fictitious-search {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 13px;
+    font-family: "Work Sans", sans-serif;
+    width: 110px; /* Adjust width as needed */
+}
+
+/* The search button/icon */
+#search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    display: inline;
+    align-items: center;
+    padding: 0;
+}
+
+/* Disable the hover border effect for the search bar specifically */
+#menu ul li#search-container:hover {
+    border-bottom: 1px solid transparent;
+    cursor: default;
+    top: -1px;
+}
+
+#topmenu {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    width: 100%;           
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 20px;        
+}
+
+
+#logo {
+    display: block;
+    margin-bottom: 10px;    
+    width: 200px;          
+    height: auto;
+}
+#logo:hover {
+   
+	  cursor: pointer;
+}
+
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;          /* Makes menu items sit in a row */
+    justify-content: center;
+    flex-wrap: wrap;        /* Allows menu to wrap on smaller screens */
+}
+
+#menu ul li {
+    margin: 0 15px;
+    display: inline-block;
+    position: relative;
+    border-bottom: 3px solid transparent; 
+}
+
+
+#menu ul li:hover {
+    border-bottom-color: #1C4269;
+    cursor: pointer;
+}
+	.shopping-bag {
+    cursor: pointer;
+}
+
+footer {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+  font-weight: <weight>;
+    margin: 20px;
+    padding: 5px;
+    font-style: normal;
+}
+.buybutton {
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    height: 50px;
+    text-align: center;
+    border: thin solid #B6B6B6;
+    background-color: #FFFFFF;
+}
+.buybutton:hover {
+    border: medium solid #000000;
+	cursor: pointer;
+}
+.buybutton h3 {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
 </style>
-<script type="text/javascript">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script> <script type="text/javascript">
 function MM_swapImgRestore() { //v3.0
   var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
@@ -80,26 +411,129 @@ function MM_showHideLayers() { //v9.0
 </script>
 </head>
 
-<body onLoad="MM_preloadImages('img/shirt-blue-reverse.png','img/shirt-green-reverse.png','img/shirt-purple-reverse.png')">
+<body onLoad="MM_preloadImages('img/hoddie-beige-reverse.png','img/hoddie-purple-reverse.png','img/hoddie-white-reverse.png')">
 <wrapper>
   <header>
-    <h1>Michael Kors</h1>
-  </header>
+    
+    <div id="topmenu">
+      <img id="logo" src="img/American-Eagle-Logo-500x281.png" alt="" width="" height="">
+      
+		 <nav id="menu"> 
+<ul>
+     <li>Today's Offers</li>
+     <li>New</li>
+	 <li>Women</li>
+	 <li>Men</li>
+	 <li>Jeans</li>
+	 <li>Shoes &#38; Accessories</li>
+	 <li>Lounge wear &#38; PJs</li>
+	 <li>Aerie</li>
+	 <li>Clearance</li>
+	<li><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="shopping-bag">
+  <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path>
+  <line x1="3" y1="6" x2="21" y2="6"></line>
+  <path d="M16 10a4 4 0 0 1-8 0"></path>
+</svg></li>
+	<li id="search-container">
+    <input type="text" placeholder="Search AE..." id="fictitious-search">
+    <button type="button" id="search-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+    </button>
+</li>
+        </ul>
+		</nav>
+</div>
+
+</header>
   <main>
     <section id="product">
-    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('blueshirt','','img/shirt-blue-reverse.png',1)"><img src="img/shirt-blue-front.png" alt="Blue shirt" width="900" height="1200" id="blueshirt"></a> 
-	  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Greenshirt','','img/shirt-green-reverse.png',1)"><img src="img/shirt-green-front.png" alt="Green Shirt" width="900" height="1200" id="Greenshirt"></a> 
-	  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Purpleshirt','','img/shirt-purple-reverse.png',1)"><img src="img/Shirt-purple-front.png" alt="Purple Shirt" width="900" height="1200" id="Purpleshirt"></a> </section>
+	  <a href="#" id="Hoddiebeige" onMouseOver="MM_swapImage('hoodiebeige','','img/hoddie-beige-reverse.png',1)" onMouseOut="MM_swapImgRestore()"><img src="img/hoddie-beige-front.png" alt="Beige Hoodie" width="534" height="683" id="hoodiebeige"></a>
+	  <a href="#" id="Hoodiepurple" onMouseOver="MM_swapImage('hoodiepurple','','img/hoddie-purple-reverse.png',1)" onMouseOut="MM_swapImgRestore()"><img src="img/hoddie-purple-front.png" alt="Purple Hoodie" width="534" height="683" id="hoodiepurple"></a> 
+	  <a href="#" id="Hoodiewhite" onMouseOver="MM_swapImage('hoddiewhite','','img/hoddie-white-reverse.png',1)" onMouseOut="MM_swapImgRestore()"><img src="img/hoddie-white-front.png" alt="White Hoodie" width="535" height="684" id="hoddiewhite"></a> </section>
     <section id="description">
-      <h2>Just a Shirt</h2>
-      <p>wearable fabric in a form of a shirt use as a wearable shirt  </p>
-      <h3>$ depends.00</h3>
-      <button id="blueswatch" onClick="MM_showHideLayers('blueshirt','','show','Greenshirt','','hide','Purpleshirt','','hide')"></button>
-      <button id="greenswatch" onClick="MM_showHideLayers('blueshirt','','hide','Greenshirt','','show','Purpleshirt','','hide')"></button>
-      <button id="purpleswatch" onClick="MM_showHideLayers('blueshirt','','hide','Greenshirt','','hide','Purpleshirt','','show')"></button>
-    </section>
+<div id="allinformation">
+<div id="info">			
+<div id="objectnameinfo">			
+		<p id="toptitlename">Matching Set</p>
+      <h2>AE 24/7 Hoodie</h2>
+      <p id="bottomtitlename">From anywhere &#38; everywhere</p>
+      <p id="promotionprice">Now &#36;29.97</p>
+	  <p id="originalprice">&#36;59.99</p>
+</div>
+<div id="colorswatches" >			
+		<h3>Color</h3>
+		<nav id="colorbuttons">
+		  <button id="beigeswatch" onClick="MM_showHideLayers('hoodiebeige','','show','hoodiepurple','','hide','hoddiewhite','','hide')"></button>
+		  <button id="purpleswatch" onClick="MM_showHideLayers('hoodiebeige','','hide','hoodiepurple','','show','hoddiewhite','','hide')"></button>
+		  <button id="whiteswatch" onClick="MM_showHideLayers('hoodiebeige','','hide','hoodiepurple','','hide','hoddiewhite','','show')"></button>
+		</nav>
+</div>			
+<div id="sizebuttonsinfo">			
+		<h3> Size</h3>
+		
+		  <nav id="allsizebuttons">
+		    <button id="sizebutton">S</button>
+		    <button id="sizebutton2">M</button>
+		    <button id="sizebutton3">L</button>
+		    <button id="sizebutton4">XL</button>
+		  </nav>
+</div>	
+	<div id="reviewsinfo">		
+			<h3>Reviews</h3>
+		<div class="star-rating">
+  <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5 stars">★</label>
+  <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 stars">★</label>
+  <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 stars">★</label>
+  <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 stars">★</label>
+  <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">★</label>
+</div>
+		<div class="quantity-toggle">
+    <button onclick="changeQty(-1)">−</button>
+    <input type="number" id="qty" value="1" min="1">
+    <button onclick="changeQty(1)">+</button>
+  </div>
+		<div class="purchbutton">
+			  <button class="buybutton"> <h3>Add to Bag</h3></button>
+		</div>
+	</div>	
+<div id="detailsinfo">
+	<details class="accordion">
+	<summary>	
+	<h3>Details</h3>
+	<span class="icon"></span>	
+	</summary>	
+	<ul>
+		<li><p>Medium-weight fabric with sweat-wicking technology</p></li>
+		<li><p>Soft, strecthy &#38; breathable material</p></li>
+		<li><p>Drawstring hood</p></li>
+		<li><p>Kangaroo pocket</p></li>
+	</ul>
+	</details>	
+</div>
+<div id="materialsinfo">
+<details class="accordion">
+	<summary>		
+	<h3>Materials</h3>
+	<span class="icon"></span>	
+	</summary>	
+		<ul>
+		<li><p>70% Recycled Polyester, 26% Rayon, 4%Elastane</p></li>
+		<li><p>Machinewash</p></li>
+		<li><p>Imported</p></li>
+	</ul>
+	</details>
+</div>	
+	 </div> 
+</div>		
+	  </section>
   </main>
-  <footer></footer>
+  <footer>
+	  <p>  &copy; 2026, Nycolas Moreno.</p>
+	  <p> This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+	</footer>
 </wrapper>
 </body>
 </html>
