@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script src="https://kit.fontawesome.com/a3eea9bcdd.js" crossorigin="anonymous"></script>	
+<style type="text/css">
+	html{
+		height: 100%;
+		
+	}
+body {
+    margin: 0;
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(AdobeStock_473939830.jpeg);
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+	 min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    background-color: #F0F0F0;
+}
+wrapper {
+    width: 1366px;
+}
+header img {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 208px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    display: inline;
+}
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    flex-shrink: 0;
+}
+	.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+	.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+    font-size: large;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}+#Tabs1 {
+    border: none ;
+    background: transparent;
+}
+	#Tabs1 .ui-tabs-nav {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #eee; 
+    display: flex;
+}
+#Tabs1 {
+    background-image: none;
+    background-color: #FFFFFF;
+}
+	#Tabs1 .ui-tabs-nav li {
+    background: none ;
+    border: none ;
+    margin-right: 10px;
+}
+	#Tabs1 .ui-tabs-nav li a {
+    color: #666 ;
+    font-weight: 600;
+    padding: 10px 20px;
+    outline: none;
+    transition: 0.3s;
+    font-size: x-large;
+}
+#Tabs1 .ui-tabs-nav li a:hover  {
+    color: #1393E9 ;
+    font-weight: 600;
+    padding: 10px 20px;
+    outline: none;
+    transition: 0.3s;
+    font-size: x-large;
+}
+	#Tabs1 .ui-tabs-nav li.ui-tabs-active {
+    border-bottom: 3px solid #3498db;
+    margin-bottom: -2px; 
+}
+	#Tabs1 .ui-tabs-nav li.ui-tabs-active a {
+    color: #3498db;
+}
+	.ui-tabs-panel {
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+	.ui-tabs-panel p {
+    margin: 0;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #555;
+    padding-left: 3px;
+}
+	#tabswrapper {
+    flex: 1 0 auto;
+    width: 100%;
+}
+
+#mainselections {
+    margin: 50px auto;
+    background-color: rgba(255,255,255,0.17);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    width: 950px;
+}
+	input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    min-width: 150px;
+}
+	.search-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.search-btn:hover {
+    background: #0056b3;
+}
+	.travel-dropdown {
+ width: 65px;          
+    min-width: 65px;    
+    flex: none;           
+    padding: 8px 5px;    
+    font-size: 13px;      
+    height: 40px;         
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.traveler-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.traveler-group label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+}
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header>
+ <wrapper>
+ <nav class="navbar">
+	 <a href="#">
+	 <img src="download.png" alt="logo" width="" height="">
+       </a>
+		 <ul class="nav-links">
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Packages</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>	 
+	 
+</wrapper>
+</header>
+<wrapper id="tabswrapper">
+<div id="mainselections">	
+	
+	<div id="Tabs1">
+	  <ul>
+	    <li><a href="#tabs-1"><i class="fa-solid fa-plane"></i> Flights</a></li>
+        <li><a href="#tabs-2"><i class="fa-solid fa-bed"></i> Hotels</a></li>
+        <li><a href="#tabs-3"><i class="fa-solid fa-car-rear"></i> Rentals</a></li>
+        <li><a href="#tabs-4"><i class="fa-solid fa-person-walking-luggage"></i> Bundels</a></li>
+        <li><a href="#tabs-5"><i class="fa-solid fa-umbrella-beach"></i> Activities</a></li>
+    </ul>
+	  <div id="tabs-1">
+	    <input type="text" placeholder="From where?">
+        <input type="text" placeholder="Where to?">
+        <input type="date">
+		  <div class="traveler-group">
+    <p>Adults</p>
+    <select class="travel-dropdown">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+</div>
+
+<div class="traveler-group">
+    <p>Children</p>
+    <select class="travel-dropdown">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+		<option value="5">5</option>
+        <option value="6">6</option>
+    </select>
+</div>
+        <button class="search-btn">Search</button>
+    </div>
+      <div id="tabs-2">
+        <input type="text" placeholder="Where to?">
+		 <p>Check-in</p> 
+        <input type="date">
+		  <p>Check-out</p>
+		<input type="date">
+        <button class="search-btn">Search</button>
+      </div>
+    <div id="tabs-3">
+        <input type="text" placeholder="Pick-up Location">
+		<input type="text" placeholder="Drop-of locations">
+		 <p>Pick-up date</p> 
+        <input type="date">
+		  <p>Drop-off date</p>
+		<input type="date">
+        <button class="search-btn">Search</button>
+    </div>
+    <div id="tabs-4">
+       <input type="text" placeholder="From where?">
+        <input type="text" placeholder="Where to?">
+        <input type="date">
+        <button class="search-btn">Search</button>
+    </div>
+    <div id="tabs-5">
+       <input type="text" placeholder="Going to?">
+		<input type="date">
+       <button class="search-btn">Search</button>
+    </div>
+  </div>
+  </div>	
+</wrapper>
+<footer> <p>  &copy; 2026, Nycolas Moreno.</p>
+	  <p> This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
